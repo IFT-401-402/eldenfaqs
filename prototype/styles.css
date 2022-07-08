@@ -1,0 +1,92 @@
+body {
+  background-color: #163245;
+  font-family: "Century Gothic";
+     }
+h1 {
+  color: #F8de7e;
+  text-align: center;
+   }
+h2 {
+  color: #F8de7e;
+  text-align: center;
+   }
+p {
+  color: #EFEFEF;
+  text-align: center;
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+a:link {
+  color: GhostWhite;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: WhiteSmoke;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* for the top navigation bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #205375;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #b3cada;
+}
+
+/* Giving the background color to the update notes */
+.updates {
+  background-color: #0a1e2b;
+  padding: 20px;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Fixing the top of the page image */
+.top_image {
+  width: 950px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
