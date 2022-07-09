@@ -37,3 +37,4 @@
 [Fri Jul 08 00:18:14.100814 2022] [php7:error] [pid 8316:tid 1940] [client 127.0.0.1:59312] script 'C:/xampp7/htdocs/local.capstone.larrystanfield/index.php' not found or unable to stat
 [Fri Jul 08 00:19:49.221888 2022] [php7:error] [pid 8316:tid 1940] [client 127.0.0.1:59314] script 'C:/xampp7/htdocs/local.capstone.larrystanfield/index.php' not found or unable to stat
 [Fri Jul 08 00:20:10.615769 2022] [php7:error] [pid 8316:tid 1940] [client 127.0.0.1:59318] script 'C:/xampp7/htdocs/local.capstone.larrystanfield/index.php' not found or unable to stat
+[Sat Jul 09 01:13:16.156562 2022] [core:error] [pid 12556:tid 1928] (20024)The given path is misformatted or contained invalid characters: [client 127.0.0.1:53274] AH00127: Cannot map GET /site/pix/front_page_image.jpg%3E%20%20%20%20%20%20%20%20%3Clink%20rel= HTTP/1.1 to file, referer: http://local.capstone.larrystanfield/en/
