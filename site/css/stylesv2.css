@@ -1,0 +1,98 @@
+body {
+    background-image: url("/site/pix/backgroundimage.jpeg");
+    background-color: #292929;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 26pt;
+    background-size: cover;
+    background-position-x: 25%;
+}
+
+body div.navbar ul{
+
+    display: block;
+    background-color: #275048;
+    border: 1px solid #ffffff;
+
+}
+
+body div.navbar ul li{
+
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0 7.6%;
+
+}
+
+body div.navbar ul li a{
+
+    text-decoration: none;
+    color: #ffffff
+
+}
+
+.content {
+    max-width: 1100px;
+    margin: auto;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: left;
+    }
+
+p.standard {
+  color: #c9c9c9;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.headerbanner {
+    background-color: #275048;
+    text-align: left;
+    padding: 20px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 10px;
+}
+
+.navbar {
+    text-align: right;
+    background-color: #d6d6d694;
+    color: #000000;
+    padding: 10px;
+}
+
+.pagetext {
+    background-color: #929292d8;
+    color: white;
+    padding: 20px;
+    max-width: 90%;
+    margin: auto;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+/* this is all for the form entry areas */
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 2px;
+    border-color: #383838;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type=submit] {
+    background-color: #383838;
+    color: white;
+    padding: 15px;
+    margin: 5px;
+    width: 100%;
+}
