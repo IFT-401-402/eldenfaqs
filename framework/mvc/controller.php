@@ -51,5 +51,23 @@
 
             return true;
         }
+
+        // Improve your game route
+        public static function improve_your_game()
+        {
+            $result = IMPROVE_GAME_MODEL::Get_Data();
+            MVC::Store_Content('improve_your_game', $result);
+
+            return true;
+        }
+
+        // Login page route
+        public static function login_page()
+        {
+            $result = LOGIN_MODEL::Get_Data();
+            MVC::Store_Content('login_page', $result);
+
+            return true;
+        }
     }
 ?>

@@ -1,0 +1,15 @@
+<?php
+    UTIL::Load_Content('load_ext', 'static');
+?>
+    <div id="login-page" class="page">
+        <div class="content">
+            <?php UTIL::Load_Content('login_page', 'dynamic'); ?>
+        </div>
+    </div>
+
+<script>
+    var dom = new vulcan();
+    var ajax = new bull();
+
+    dom.system.require('/framework/mvc/views/assets/js', 'root');
+</script>
