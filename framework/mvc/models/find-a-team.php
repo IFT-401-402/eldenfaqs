@@ -15,7 +15,7 @@
         exit();
     
     // ABOUT MODEL class
-    class ABOUT_MODEL
+    class FIND_A_TEAM_MODEL
     {
         public static function Get_Data()
         {

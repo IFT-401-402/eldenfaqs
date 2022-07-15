@@ -33,5 +33,23 @@
             
             return true;
         }
+
+        // About route
+        public static function about()
+        {
+            $result = ABOUT_MODEL::Get_Data();
+            MVC::Store_Content('about', $result);
+
+            return true;
+        }
+
+        // Find a team route
+        public static function find_a_team()
+        {
+            $result = FIND_A_TEAM_MODEL::Get_Data();
+            MVC::Store_Content('find_a_team', $result);
+
+            return true;
+        }
     }
 ?>

@@ -14,7 +14,7 @@
     if (!defined('micro_mvc'))
         exit();
     
-    // ROOT MODEL class
+    // HOME MODEL class
     class HOME_MODEL
     {
         public static function Get_Data()
