@@ -15,7 +15,7 @@
         exit();
     
     // ABOUT MODEL class
-    class ABOUT_MODEL
+    class ABOUT_MODEL extends ROOT_MODEL
     {
         public static function Get_Data()
         {

@@ -15,7 +15,7 @@
         exit();
     
     // HOME MODEL class
-    class HOME_MODEL
+    class HOME_MODEL extends ROOT_MODEL
     {
         public static function Get_Data()
         {

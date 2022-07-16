@@ -15,7 +15,7 @@
         exit();
     
     // ABOUT MODEL class
-    class IMPROVE_GAME_MODEL
+    class IMPROVE_GAME_MODEL extends ROOT_MODEL
     {
         public static function Get_Data()
         {

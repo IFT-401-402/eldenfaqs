@@ -730,5 +730,100 @@
             else
                 return false;
         }
+
+        /**
+         * UTIL::Load_Banner_By_Route - Loads Banner content by route
+         * @param string $mvc_route route name
+         * 
+         * @return void
+         */
+        public static function Load_Banner_By_Route($mvc_route)
+        {
+            $routes_array = self::Config_Importer('routes', '', ',');
+
+            if(in_array($mvc_route,$routes_array)){
+                self::Load_Banner_Content($mvc_route);
+            }else{
+                self::Load_Banner_Content('root');
+            }
+
+        }
+
+        /**
+         * UTIL::Load_Banner_Content - Loads Banner Content by route
+         * @param string $mvc_route route name
+         * 
+         * @return void
+         */
+        private static function Load_Banner_Content($mvc_route)
+        {
+
+            $route_banner_array = self::Config_Importer('banner', '', ',');
+            $banner_array = array();
+            foreach( $route_banner_array as $key => $value ){
+                 $temp = explode(':', $value);
+                 $banner_array[trim($temp[0])] = trim($temp[1]);
+            }
+            
+            self::Debugger($route_banner_array,'print');
+            self::Debugger($banner_array,'print');
+
+            if(array_key_exists($mvc_route,$banner_array)){
+                echo $banner_array[$mvc_route];
+            }else{
+                echo 'Welcome to the Elden Ring Wiki';
+            }
+            
+        }
+
+        /**
+         * UTIL::Debugger - prints to dumper
+         * @param string $debugObj
+         * @param string $flag
+         * 
+         * @return void
+         */
+        public static function Debugger($debugObj, $flag = 'dump')
+        {
+
+            try{
+                if(!$fp = fopen('./dumper.txt','a')){
+                    touch('./dumper.txt');
+                    chmod('./dumper.txt', '755');
+                    $fp = fopen('./dumper.txt','a');
+                }
+            } catch (Exception $e) {
+                echo 'Caught exception: ',  $e->getMessage(), "\n";
+            }
+
+            switch($flag){
+
+                case 'dump': 
+
+                    $content = var_dump($debugObj);
+                    fwrite($fp,$content);
+                    
+                break;
+
+                case 'print':
+
+                    $content = print_r($debugObj, true);
+                    fwrite($fp,$content);
+
+                break;
+
+                default:
+
+                    $content = var_dump($debugObj);
+                    fwrite($fp,$content);
+
+                break;
+
+
+            }
+
+            fclose($fp);
+        }
+
     }
 ?>

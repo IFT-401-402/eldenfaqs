@@ -15,7 +15,7 @@
         exit();
     
     // ABOUT MODEL class
-    class FIND_A_TEAM_MODEL
+    class FIND_A_TEAM_MODEL extends ROOT_MODEL
     {
         public static function Get_Data()
         {

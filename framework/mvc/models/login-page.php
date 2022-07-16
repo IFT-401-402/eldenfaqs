@@ -14,8 +14,8 @@
     if (!defined('micro_mvc'))
         exit();
     
-    // ABOUT MODEL class
-    class LOGIN_MODEL
+    // LOGIN MODEL class
+    class LOGIN_MODEL extends ROOT_MODEL
     {
         public static function Get_Data()
         {
