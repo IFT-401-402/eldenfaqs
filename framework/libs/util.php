@@ -765,9 +765,6 @@
                  $banner_array[trim($temp[0])] = trim($temp[1]);
             }
             
-            self::Debugger($route_banner_array,'print');
-            self::Debugger($banner_array,'print');
-
             if(array_key_exists($mvc_route,$banner_array)){
                 echo $banner_array[$mvc_route];
             }else{

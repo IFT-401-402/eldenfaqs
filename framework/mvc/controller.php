@@ -69,5 +69,14 @@
 
             return true;
         }
+
+        //User Authnetication
+        public static function auth(){
+
+            $result = AUTH_MODEL::Proccess_Data();
+            MVC::Store_Content('form_page', $result);
+
+            return true;
+        }
     }
 ?>

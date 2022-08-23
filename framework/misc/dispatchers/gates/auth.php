@@ -22,7 +22,7 @@
 		return;
 	}
 
-	/*
+	
 	// OPTIONALLY USE A DB
 	$db_conn_link = DB::Use_Connection();
 
@@ -32,7 +32,7 @@
 
 		return;
 	}
-	*/
+	
 
 	// Actions / Choices
 	if ($_POST['mode'] === 'login')									// Login
