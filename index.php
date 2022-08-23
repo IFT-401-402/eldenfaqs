@@ -1,27 +1,17 @@
 <?php
-    /*
-        micro-MVC
+/**
+ * Front to the WordPress application. This file doesn't do anything, but loads
+ * wp-blog-header.php which does and tells WordPress to load the theme.
+ *
+ * @package WordPress
+ */
 
-        File name: index.php
-        Description: This file contains the index (bootstrapping).
+/**
+ * Tells WordPress to load the WordPress theme and output it.
+ *
+ * @var bool
+ */
+define( 'WP_USE_THEMES', true );
 
-        Coded by George Delaportas (G0D)
-        Copyright (C) 2015
-        Open Software License (OSL 3.0)
-    */
-
-    // Enable: E_WARNING | E_PARSE (report typical errors), -1 (report all errors) / Disable: 0 (no error reporting)
-    error_reporting(0);
-
-    // Enable sessions
-    session_start();
-
-    // Include MICRO MVC framework
-    require('framework/micro_mvc.php');
-
-    // Include the config loader
-    require('framework/misc/config_loader.php');
-
-    // Include the supervisor
-    require('framework/misc/supervisor.php');
-?>
+/** Loads the WordPress Environment and Template */
+require __DIR__ . '/wp-blog-header.php';
