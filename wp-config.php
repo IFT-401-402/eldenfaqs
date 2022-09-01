@@ -20,7 +20,7 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'capstone_wp' );
+define( 'DB_NAME', 'u766479380_capstone_wp' );
 
 /** Database username */
 define( 'DB_USER', 'u766479380_capstone_wp' );
@@ -29,7 +29,7 @@ define( 'DB_USER', 'u766479380_capstone_wp' );
 define( 'DB_PASSWORD', '0$R8YJKwmI' );
 
 /** Database hostname */
-define( 'DB_HOST', '127.0.0.1' );
+define( 'DB_HOST', 'localhost' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
