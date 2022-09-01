@@ -25,10 +25,10 @@
 <div id="page" class="site">
 	<div class="navbar">
 		<ul>
-			<li><a href="/en/">Home</a></li>
-			<li><a href="/en/find-a-team">Find a Team</a></li>
-			<li><a href="/en/improve-your-game">Improve Your Game</a></li>
-			<li><a href="/en/about">About</a></li>
-			<li><a href="/en/login-page">Login</a></li>
+			<li><a href="/">Home</a></li>
+			<li><a href="/find-a-team">Find a Team</a></li>
+			<li><a href="/improve-your-game">Improve Your Game</a></li>
+			<li><a href="/about">About</a></li>
+			<li><a href="/login">Login</a></li>
 		</ul>
 	</div>
